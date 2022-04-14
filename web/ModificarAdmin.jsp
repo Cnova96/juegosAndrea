@@ -11,7 +11,7 @@
         
     <div id="menu">
                     <ul>
-                        <li><a href="administración.html" title="Inicio">Inicio</a></li>
+                        <li><a href="administracion.html" title="Inicio">Inicio</a></li>
                         <li><a href="" title="Modifciar" class ="active">Modificar Administrador</a></li>
                     </ul>
     </div>
@@ -44,7 +44,7 @@
               <input type="password">
               
               <input type="submit" value="Modificar Usuario">
-              <a href="administración.html">Volver al Inicio</a>
+              
             </form>
         </div>
     </body>

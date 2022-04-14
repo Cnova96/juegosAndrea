@@ -13,7 +13,7 @@
         
     <div id="menu">
                     <ul>
-                        <li><a href="administración.html" title="Inicio">Inicio</a></li>
+                        <li><a href="administracion.html" title="Inicio">Inicio</a></li>
                         <li><a href="videojuego.html" title="crearvid">Administración de Videojuegos</a></li>
                         <li><a href="" title="crearvideoj" class ="active">Crear Videojuegos</a></li>
                     </ul>

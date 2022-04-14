@@ -1,7 +1,8 @@
-body{
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
+body{
     margin: 0;
-    padding: 0;
+    padding: 0px;
     background: lightblue;
     background-size: cover;
     font-family: sans-serif;
@@ -16,7 +17,7 @@ body{
     color: black;
     top: 05%;
     left: 50%;
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding:30px 30px;
