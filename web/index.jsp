@@ -21,7 +21,7 @@
               
               <!--contraseña-->
               <label for="contraseña">Contraseña</label>
-              <input type="password" name="contraseña" placeholder="Introduzca su contraseña" required>
+              <input type="password" name="pass" placeholder="Introduzca su contraseña" required>
               
               <input type="submit" value="loguin" name="verificar">
               <a href="crearusuario.html">Crear Usuario</a>

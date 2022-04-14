@@ -1,10 +1,11 @@
 
-public class usuario {
-    private int cedula; 
-    private String nombre; 
+public class Usuario {
+
+    private int cedula;
+    private String nombre;
     private String correo;
-    private String tipo; 
-    private String contraseña; 
+    private String tipo;
+    private String pass;
 
     public int getCedula() {
         return cedula;
@@ -38,12 +39,12 @@ public class usuario {
         this.tipo = tipo;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getPass() {
+        return pass;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setPass(String pass) {
+        this.pass = pass;
     }
-    
+
 }

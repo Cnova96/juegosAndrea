@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -18,27 +17,28 @@ public class srvusuario extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         String accion = request.getParameter("accion");
-        
-        try{
-            if (accion != null){
-                switch(accion){                    case "verificar": 
+
+        try {
+            if (accion != null) {
+                switch (accion) {
+                    case "verificar":
                         verificar(request, response);
-                        break; 
+                        break;
                     case "cerrar":
                         cerrarsession(request, response);
-                    default: 
+                    default:
                         response.sendRedirect("index.jsp");
                 }
-            }else{
+            } else {
                 response.sendRedirect("index.jsp");
-            } 
-            }catch(Exception e){
-                try{
-                   /* this.getServletConfig().getServletContext().getRequestDispatcher("/mensaje.jsp").forward(request, response);*/          
-                }catch(Exception ex){
-                    System.out.println("Error" + e.getMessage());
-                }
             }
+        } catch (Exception e) {
+            try {
+                /* this.getServletConfig().getServletContext().getRequestDispatcher("/mensaje.jsp").forward(request, response);*/
+            } catch (Exception ex) {
+                System.out.println("Error" + e.getMessage());
+            }
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -83,22 +83,22 @@ public class srvusuario extends HttpServlet {
     private void verificar(HttpServletRequest request, HttpServletResponse response) throws Exception {
         HttpSession sesion;
         Dusuario dao;
-        usuario usuario;
+        Usuario usuario;
         usuario = this.obtenerUsuario(request);
         dao = new Dusuario();
-        usuario = dao.identificar(usuario); 
-        if(usuario != null && usuario.getTipo().equals("A")){
+        usuario = dao.identificar(usuario);
+        if (usuario != null && usuario.getTipo().equals("A")) {
             sesion = request.getSession();
             sesion.setAttribute("usuario", usuario);
             request.setAttribute("msje", "Bienvenio al sistema");
-            this.getServletConfig().getServletContext().getRequestDispatcher("/Web Pages/administracion.jsp").forward(request, response);          
+            this.getServletConfig().getServletContext().getRequestDispatcher("/administracion.jsp").forward(request, response);
 
-        }else if(usuario != null){
+        } else if (usuario != null) {
             sesion = request.getSession();
             sesion.setAttribute("usuario", usuario);
             request.setAttribute("msje", "Bienvenio al sistema");
-            this.getServletConfig().getServletContext().getRequestDispatcher("").forward(request, response);     
-        }else{
+            this.getServletConfig().getServletContext().getRequestDispatcher("").forward(request, response);
+        } else {
             request.setAttribute("msje", "Credenciales Incorrectas");
             request.getRequestDispatcher("index.jsp").forward(request, response);
         }
@@ -111,10 +111,10 @@ public class srvusuario extends HttpServlet {
         response.sendRedirect("index.jsp");
     }
 
-    private usuario obtenerUsuario(HttpServletRequest request) {
-        usuario u = new usuario();
+    private Usuario obtenerUsuario(HttpServletRequest request) {
+        Usuario u = new Usuario();
         u.setNombre(request.getParameter("nombreusuario"));
-        u.setContraseña(request.getParameter("contraseña"));
+        u.setPass(request.getParameter("pass"));
         return u;
     }
 
