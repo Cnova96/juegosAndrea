@@ -1,0 +1,33 @@
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="admin.css" rel="stylesheet" type="text/css"/>
+        <title>ADMINISTRACIÓN</title>
+    </head>
+    <body>
+        <header class="admin">
+
+            <h1>Administración</h1>
+            <form>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#" title="Inicio" class="active">Inicio</a></li>
+                    </ul>
+                </div>
+
+                <div id="main">
+
+                    <a href="ModificarAdmin.html" class="rainbow rainbow-1">Modificar Cuenta Administrador</a>
+                    <a href="ConsultarUs.html" class="rainbow rainbow-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspConsultar Usuarios&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                    <a href="prestamos.html" class="rainbow rainbow-3">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspConsultar Prestamos&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                    <a href="videojuego.html" class="rainbow rainbow-4">Administración de Videojuegos</a>
+                    
+                </div>
+
+            </form>
+        </header>
+    </body>
+</html>

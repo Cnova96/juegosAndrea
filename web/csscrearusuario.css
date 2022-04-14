@@ -1,0 +1,102 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    background: url("https://static.vecteezy.com/system/resources/previews/000/651/810/large_2x/vector-videogame-cartoons-pattern-background.jpg") no-repeat center top; 
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+           
+
+}
+
+.usuario{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+        
+}
+
+.usuario h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.usuario label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: bold;
+    
+    
+}
+
+.usuario input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.usuario a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.usuario a:hover{
+ color: purple;
+}
+
+.usuario input[type="text"], 
+.usuario input[type="password"]
+{
+border: none; 
+border-bottom: 1px solid blue;
+background: #FBEBF4;
+outline: none;
+height: 30px;
+color: purple;
+font-size: 14px;
+}
+
+.usuario input[type="submit"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #F9AED9;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.usuario b{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: bold;
+    color: red;
+}
+
+.usuario input[type="number"]{
+border: none; 
+border-bottom: 1px solid blue;
+background: #FBEBF4;
+outline: none;
+height: 30px;
+color: purple;
+font-size: 14px;
+}
+
+.usuario input[type="number"]::-webkit-inner-spin-button,
+.usuario input[type="number"]::-webkit-outer-spin-button
+{
+-webkit-appearance: none;
+}

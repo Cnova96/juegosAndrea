@@ -1,0 +1,121 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    background: url("https://static.vecteezy.com/system/resources/previews/000/651/810/large_2x/vector-videogame-cartoons-pattern-background.jpg") no-repeat center top; 
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+           
+
+}
+
+.usuario{
+    width: 80%;
+    height: 600px;
+    background-color: lightblue;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    margin-top: 94px;
+        
+}
+
+.usuario h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.usuario label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: bold;
+    
+    
+}
+
+.usuario input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.usuario a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: darkslateblue;
+}
+
+.usuario a:hover{
+ color: purple;
+}
+
+.usuario input[type="text"], 
+.usuario input[type="password"]
+{
+border: none; 
+border-bottom: 1px solid blue;
+background: #FBEBF4;
+outline: none;
+height: 30px;
+color: purple;
+font-size: 14px;
+}
+
+.usuario input[type="submit"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #F9AED9;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+#menu { margin:40px 0 0 87px; }
+#menu ul { list-style:none; }
+#menu ul li { display:inline; float:left; margin-bottom:20px; }
+
+
+#menu ul li a { padding:20px; background: rgba(255,138,30,0.3); 
+                text-decoration: none; 
+                font: bold 20px Helvetica, Sans-Serif; 
+                letter-spacing: -1px; 
+                color: white;
+                text-shadow: #eee 0px 0px 10px; }
+
+#menu ul li:first-child a { -moz-border-radius-topleft: 12px; -webkit-border-top-left-radius:12px; }
+
+#menu ul li:last-child a { -moz-border-radius-topright: 12px; -webkit-border-top-right-radius:12px; }
+
+#menu ul li a:hover { -moz-box-shadow: 0 -5px 10px #777; -webkit-box-shadow: 0 -5px 10px #777;
+                      background: -webkit-gradient(
+                          linear, right bottom, left top, color-stop(0, rgb(237,227,112)), color-stop(0.72, rgb(255,173,10))) !important;
+                      background: -moz-linear-gradient(
+                          right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) !important;
+                      background-color:rgb(255,173,10) !important;
+                      -moz-opacity:.90; filter:alpha(opacity=90); opacity:.90; }
+
+#menu ul li a.active { background: blue !important; }
+
+#main { clear:both; background: url("https://www.chiquipedia.com/images/fondos-pantalla-videojuegos-mario-1024.jpg?phpMyAdmin=9ea091c51a5aa3cf876fb3cf0a5f7f3d")no-repeat center top /*rgba(255,138,30,0.8)*/; 
+        width:1000px; 
+        margin-left:120px;
+        height: 350px;
+        -moz-border-radius-topright: 12px; 
+        -moz-border-radius-bottomright: 12px; 
+        -moz-border-radius-bottomleft: 12px;
+        -webkit-border-top-right-radius:12px; 
+        -webkit-border-bottom-right-radius:12px; 
+        -webkit-border-bottom-left-radius:12px;}
+
+
+.main{
+  margin-top: 150px;
+}

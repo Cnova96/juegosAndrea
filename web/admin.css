@@ -1,0 +1,153 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+
+}
+
+
+.admin{
+    width: 100%;
+    background: url("https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2660/posts/32590/image-upload/youtube-banner-template-for-gaming-review-channel-462b.jpg");
+    color: black;
+    top: 05%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding:30px 30px;
+    height: 80px;
+
+}
+
+
+.admin h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+#menu { margin:40px 0 0 80px; }
+#menu ul { list-style:none; }
+#menu ul li { display:inline; float:left; margin-bottom:20px; }
+
+
+#menu ul li a { padding:20px; background: rgba(255,138,30,0.3); 
+                text-decoration: none; 
+                font: bold 20px Helvetica, Sans-Serif; 
+                letter-spacing: -1px; 
+                color: white;
+                text-shadow: #eee 0px 0px 10px; }
+
+#menu ul li:first-child a { -moz-border-radius-topleft: 12px; -webkit-border-top-left-radius:12px; }
+
+#menu ul li:last-child a { -moz-border-radius-topright: 12px; -webkit-border-top-right-radius:12px; }
+
+#menu ul li a:hover { -moz-box-shadow: 0 -5px 10px #777; -webkit-box-shadow: 0 -5px 10px #777;
+                      background: -webkit-gradient(
+                          linear, right bottom, left top, color-stop(0, rgb(237,227,112)), color-stop(0.72, rgb(255,173,10))) !important;
+                      background: -moz-linear-gradient(
+                          right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) !important;
+                      background-color:rgb(255,173,10) !important;
+                      -moz-opacity:.90; filter:alpha(opacity=90); opacity:.90; }
+
+#menu ul li a.active { background: blue !important; }
+
+#main { clear:both; background: url("https://www.chiquipedia.com/images/fondos-pantalla-videojuegos-mario-1024.jpg?phpMyAdmin=9ea091c51a5aa3cf876fb3cf0a5f7f3d")no-repeat center top /*rgba(255,138,30,0.8)*/; 
+        width:1000px; 
+        margin-left:120px;
+        height: 350px;
+        -moz-border-radius-topright: 12px; 
+        -moz-border-radius-bottomright: 12px; 
+        -moz-border-radius-bottomleft: 12px;
+        -webkit-border-top-right-radius:12px; 
+        -webkit-border-bottom-right-radius:12px; 
+        -webkit-border-bottom-left-radius:12px;}
+
+
+.main{
+  margin-top: 150px;
+}
+
+.admin .main a{
+    text-align: left;
+}
+
+
+.rainbow{
+  background-color: #AEF9ED;
+  border-radius: 4px;  
+  color: blue;
+  cursor: pointer;
+  margin: 20px;
+  display: inline-block;
+  margin-left: 250px;
+  padding: 10px 150px;
+}
+
+.rainbow-1:hover{
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 2s linear infinite;
+
+}
+
+.rainbow-2:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  animation:slidebg 2s linear infinite;
+}
+
+.rainbow-3:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+  animation:slidebg 2s linear infinite;
+}
+
+.rainbow-4:hover{
+   background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #F68B1D, 
+      #FCED00,
+      #009E4F,
+      #00AAC3,
+      #732982
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+
+.rainbow-5:hover{
+   background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #E7484F 16.65%,
+      #F68B1D 16.65%,
+      #F68B1D 33.3%,
+      #FCED00 33.3%,
+      #FCED00 49.95%,
+      #009E4F 49.95%,
+      #009E4F 66.6%,
+      #00AAC3 66.6%,
+      #00AAC3 83.25%,
+      #732982 83.25%,
+      #732982 100%,
+      #E7484F 100%
+     
+     
+     
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
