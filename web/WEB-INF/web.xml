@@ -8,6 +8,14 @@
         <servlet-name>srvvideo</servlet-name>
         <servlet-class>srvvideo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>srvusuarioc</servlet-name>
+        <servlet-class>srvusuarioc</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ModificarUsu</servlet-name>
+        <servlet-class>ModificarUsu</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>srvusuario</servlet-name>
         <url-pattern>/srvusuario</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>srvvideo</servlet-name>
         <url-pattern>/srvvideo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>srvusuarioc</servlet-name>
+        <url-pattern>/srvusuarioc</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModificarUsu</servlet-name>
+        <url-pattern>/ModificarUsu</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -11,29 +11,27 @@
         <div class="usuario">
             
             <h1>Crear Usuario</h1>
-            <form>
+            <form action="srvusuarioc?accion=verificar" method="POST">
               <!--nombre usuario-->
               <label for="nombreusuario">Nombre de Usuario <b>*</b></label>
-              <input type="text" placeholder="Digite su nombre" required>
+              <input name ="nombreusuario" type="text" placeholder="Digite su nombre" required>
               
               <!--cedula-->
               <label for="cedula">Cedula <b>*</b></label>
-              <input type="number"  required placeholder="Digite su numero de cedula">
+              <input name="cedula" type="number"  required placeholder="Digite su numero de cedula">
               
                <!--correo-->
               <label for="correo">Correo Electronico <b>*</b></label>
-              <input type="text" placeholder="Digite su correo electronico" required>
+              <input name="correo"type="text" placeholder="Digite su correo electronico" required>
               
               <!--contraseña-->
-              <label for="contraseña">Contraseña <b>*</b></label>
-              <input type="password" placeholder="Introduzca su contraseña" required>
+              <label for="contrasena">Contraseña <b>*</b></label>
+              <input name="contrasena" type="password" placeholder="Introduzca su contraseña" required>
               
-              <!--contraseña-->
-              <label for="contraseña">Confirmar Contraseña <b>*</b></label>
-              <input type="password" placeholder="Introduzca su contraseña" required>
+  
               
               <input type="submit" value="Crear Usuario">
-              <a href="index.html">Volver al Inicio</a>
+              <a href="index.jsp">Volver al Inicio</a>
             </form>
         </div>
     </body>

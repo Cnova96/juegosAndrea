@@ -24,7 +24,7 @@
               <input type="password" name="pass" placeholder="Introduzca su contraseña" required>
               
               <input type="submit" value="loguin" name="verificar">
-              <a href="crearusuario.html">Crear Usuario</a>
+              <a href="crearusuario.jsp">Crear Usuario</a>
             </form>
         </div>
     </body>

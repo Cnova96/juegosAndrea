@@ -93,11 +93,11 @@ public class srvusuario extends HttpServlet {
             request.setAttribute("msje", "Bienvenio al sistema");
             this.getServletConfig().getServletContext().getRequestDispatcher("/administracion.jsp").forward(request, response);
 
-        } else if (usuario != null) {
+        } else if (usuario != null && usuario.getTipo().equals("U")) {
             sesion = request.getSession();
             sesion.setAttribute("usuario", usuario);
             request.setAttribute("msje", "Bienvenio al sistema");
-            this.getServletConfig().getServletContext().getRequestDispatcher("").forward(request, response);
+            this.getServletConfig().getServletContext().getRequestDispatcher("/usuario.jsp").forward(request, response);
         } else {
             request.setAttribute("msje", "Credenciales Incorrectas");
             request.getRequestDispatcher("index.jsp").forward(request, response);

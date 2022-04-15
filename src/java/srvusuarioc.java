@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import javafx.scene.image.Image;
@@ -10,9 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
-public class srvvideo extends HttpServlet {
+public class srvusuarioc extends HttpServlet {
 
-   
+  
+    
    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -27,10 +27,10 @@ public class srvvideo extends HttpServlet {
                     case "cerrar":
                         cerrarsession(request, response);
                     default:
-                        response.sendRedirect("crearvid.jsp");
+                        response.sendRedirect("crearusuario.jsp");
                 }
             } else {
-                response.sendRedirect("crearvid.jsp");
+                response.sendRedirect("crearusuario.jsp");
             }
         } catch (Exception e) {
             try {
@@ -81,42 +81,42 @@ public class srvvideo extends HttpServlet {
     }// </editor-fold>
 
      private void verificar(HttpServletRequest request, HttpServletResponse response) throws Exception {
-          HttpSession sesion;
-        Dvideojue dao;
-        Vidoejuegos Vidoejuegos;
-        Vidoejuegos = this.obtenerVidoejuegos(request);
-        dao = new Dvideojue();
-        Vidoejuegos = dao.identificar(Vidoejuegos);
-        if (Vidoejuegos != null ) {
+        HttpSession sesion;
+        DusuarioC dao;
+        usuarioc usuarioc;
+        usuarioc = this.obtenerusuario(request);
+        dao = new DusuarioC();
+        usuarioc = dao.identificar(usuarioc);
+        if (usuarioc != null ) {
+         
+         this.getServletConfig().getServletContext().getRequestDispatcher("/crearusuario.jsp").forward(request, response);
           
-         this.getServletConfig().getServletContext().getRequestDispatcher("/crearvid.jsp").forward(request, response);
-    
 
         }  else {
             request.setAttribute("msje", "no se creo videojuego");
-            request.getRequestDispatcher("crearvid.jsp").forward(request, response);
+            request.getRequestDispatcher("crearusuario.jsp").forward(request, response);
         }
      }
     
 
     private void cerrarsession(HttpServletRequest request, HttpServletResponse response) throws Exception {
         HttpSession sesion = request.getSession();
-        sesion.setAttribute("videoejuegos", null);
+        sesion.setAttribute("usuarioc", null);
         sesion.invalidate();
         response.sendRedirect("index.jsp");
     }
 
-    private Vidoejuegos obtenerVidoejuegos(HttpServletRequest request) {
-        Vidoejuegos u = new Vidoejuegos();
-        u.setNombre(request.getParameter("nombrevid"));
-        u.setCodigov(Integer.parseInt(request.getParameter("codigovid")));
-        u.setCodigoej(Integer.parseInt(request.getParameter("codigoej")));
-        u.setImagen((Image) request.getAttribute("imgaen"));
+    private usuarioc obtenerusuario(HttpServletRequest request) {
+        usuarioc u = new usuarioc();
+        
+        u.setNombre(request.getParameter("nombreusuario"));
+        u.setCedula(Integer.parseInt(request.getParameter("cedula")));
+        u.setCorreo(request.getParameter("correo"));
+        u.setPass(request.getParameter("contrasena"));
         
         return u;    
     }
 
     
-   
 
 }

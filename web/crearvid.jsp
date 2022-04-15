@@ -35,9 +35,7 @@
                 <label for="codigoej">Codigo Ejemplar <b>*</b></label>
                 <input name="codigoej" type="number"  required placeholder="Digite su correo electronico">
               
-                <!--Imagen-->
-                <label for="imgaen">Imagen Videojuego <b>*</b></label>
-                <input name ="imgaen" type="file"  accept="image/png, image/jpg">
+            
               
                 <!--botón-->
                  <input type="submit" value="Crear Videojuego" name="verificar">
