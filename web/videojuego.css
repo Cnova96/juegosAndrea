@@ -83,3 +83,140 @@ body{
   }
 }
 
+
+.datable-container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #2a3338;
+    border-radius: 3px;
+    color:white;
+    width: 900px;
+    margin: 0 auto;
+    font-size: 12px
+}
+
+.datable-container .header-tools{
+    border-bottom: solid 1px rgb(61, 68, 73);
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.datable-container .header-tools .search{
+    width: 30%;
+}
+
+.datable-container .header-tools .search .search-input{
+    width: 100%;
+    background-color: rgb(61, 68, 73);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: solid 1px rgb(61, 68, 73);
+    color: white;
+}
+
+.datable-container .header-tools .tools{
+    width: 70%;
+}
+
+.datable-container .header-tools .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /*justify-content: start;*/
+    align-items: baseline;
+}
+
+.datable-container .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0 2px;
+    align-items: baseline;
+}
+
+.datable-container .footer-tools{
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.datable-container .footer-tools .list-items{
+    width: 50%;
+}
+
+.datable-container .footer-tools .pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.datable-container .footer-tools .pages ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.datable-container .footer-tools .pages ul li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.datable-container .footer-tools .pages ul li button,
+.datable-container .header-tools .tools ul li button{
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.datable-container .footer-tools .pages ul li button:hover,
+.datable-container .header-tools .tools ul li button:hover{
+    background: #3282b8;
+    color: white;
+}
+
+.datable-container .footer-tools .pages ul li span.active{
+    background-color: #3282b8;
+    border-radius: 3px;
+}
+
+.datable-container .footer-tools .pages ul li button,
+.datable-container .footer-tools .pages ul li span,
+.datable-container .header-tools .tools ul li button{
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+.datable-container .datable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datable-container .datable,
+.datable-container .datable th,
+.datable-container .datable td{
+    padding: 12px 12px;
+}
+
+.datable-container .datable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px rgb(61, 68, 73);
+}
+
+.datable-container .datable td{
+    border-bottom: solid 1px rgb(61, 68, 73);
+}
+
+.datable-container .datable tbody tr:nth-child(even){
+    background-color: rgb(61, 68, 73);
+}
+
+.datable-container .datable tbody tr:hover{
+    background-color: #3282b8;
+}
+

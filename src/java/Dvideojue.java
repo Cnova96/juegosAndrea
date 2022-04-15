@@ -15,15 +15,15 @@ public class Dvideojue extends conexion{
         String sql = "insert into videojuegos" + 
                 "values (" + vid.getCodigov() + "," +
                 "'" + vid.getNombre() + "'" + "," +
-                vid.getCodigoej() + "," + "'" + vid.getImagen() + "'" + ");";
-        
+                  vid.getCodigoej() + "," + "'" + vid.getImagen() + "'" + ");";
+
         con = new conexion();
         try {
             cn = con.conectar();
             st = cn.createStatement();
            
             if (vide != null) {
-               
+  
                  rs = st.executeQuery(sql);
             }
         } catch (Exception e) {

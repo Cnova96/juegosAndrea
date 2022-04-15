@@ -12,8 +12,8 @@
         
     <div id="menu">
                     <ul>
-                        <li><a href="administracion.html" title="Inicio">Inicio</a></li>
-                        <li><a href="videojuego.html" title="crearvid">Administración de Videojuegos</a></li>
+                        <li><a href="administracion.jsp" title="Inicio">Inicio</a></li>
+                        <li><a href="videojuego.jsp" title="crearvid">Administración de Videojuegos</a></li>
                         <li><a href="" title="crearvideoj" class ="active">Crear Videojuegos</a></li>
                     </ul>
     </div>
@@ -40,7 +40,7 @@
                 <input name ="imgaen" type="file"  accept="image/png, image/jpg">
               
                 <!--botón-->
-                 <input type="submit" value="Crear Videojuego">
+                 <input type="submit" value="Crear Videojuego" name="verificar">
                 </form>
         </div>
    
