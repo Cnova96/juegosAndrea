@@ -11,7 +11,7 @@
         
     <div id="menu">
                     <ul>
-                        <li><a href="administracion.html" title="Inicio">Inicio</a></li>
+                        <li><a href="administracion.jsp" title="Inicio">Inicio</a></li>
                         <li><a href="" title="Modifciar" class ="active">Modificar Administrador</a></li>
                     </ul>
     </div>

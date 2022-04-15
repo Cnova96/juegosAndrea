@@ -4,9 +4,17 @@
         <servlet-name>srvusuario</servlet-name>
         <servlet-class>srvusuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>srvvideo</servlet-name>
+        <servlet-class>srvvideo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>srvusuario</servlet-name>
         <url-pattern>/srvusuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>srvvideo</servlet-name>
+        <url-pattern>/srvvideo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

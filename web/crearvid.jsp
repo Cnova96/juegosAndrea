@@ -1,5 +1,4 @@
 
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -23,22 +22,22 @@
             
               <h1>Crear Videojuegos</h1>
               
-              <form>
+              <form action="srvvideo?accion=verificar" method="POST">
                    <!--nombre videojuego-->
-                   <label for="nombrevid" >Nombre de Videojuego <b>*</b></label>
-                <input type="text" placeholder="Digite su nombre" required>
+                <label for="nombrevid" >Nombre de Videojuego <b>*</b></label>
+                <input name ="nombrevid" type="text" placeholder="Digite su nombre" required>
               
                 <!--Código-->
                 <label for="codigovid">Codigo Videojuego <b>*</b></label>
-                <input type="number"  required placeholder="Digite su numero de cedula">
+                <input name ="codigovid" type="number"  required placeholder="Digite su numero de cedula">
               
                 <!--Ejemplar-->
                 <label for="codigoej">Codigo Ejemplar <b>*</b></label>
-                <input type="number"  required placeholder="Digite su correo electronico">
+                <input name="codigoej" type="number"  required placeholder="Digite su correo electronico">
               
                 <!--Imagen-->
                 <label for="imgaen">Imagen Videojuego <b>*</b></label>
-                <input type="file" required accept="image/png, image/jpg">
+                <input name ="imgaen" type="file"  accept="image/png, image/jpg">
               
                 <!--botón-->
                  <input type="submit" value="Crear Videojuego">

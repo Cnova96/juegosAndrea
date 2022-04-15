@@ -12,7 +12,7 @@
         
     <div id="menu">
                     <ul>
-                        <li><a href="administracion.html" title="Inicio">Inicio</a></li>
+                        <li><a href="administracion.jsp" title="Inicio">Inicio</a></li>
                         <li><a href="" title="videojuego" class ="active">Administración de Videojuegos</a></li>
                     </ul>
     </div>
@@ -23,7 +23,7 @@
             <form>
                  <div id="main">
 
-                    <a href="crearvid.html" class="rainbow rainbow-1">Crear Videojuego</a>
+                    <a href="crearvid.jsp" class="rainbow rainbow-1">Crear Videojuego</a>
                    
                     
                 </div>
