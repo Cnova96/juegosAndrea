@@ -13,7 +13,7 @@
         
     <div id="menu">
                     <ul>
-                        <li><a href="administracion.html" title="Inicio">Inicio</a></li>
+                        <li><a href="administracion.jsp" title="Inicio">Inicio</a></li>
                         <li><a href="" title="prestamos" class ="active">Prestamos</a></li>
                     </ul>
     </div>

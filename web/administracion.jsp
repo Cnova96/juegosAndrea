@@ -12,7 +12,7 @@
 
             <h1>Administración</h1>
                     
-            <form acction="srvusuario?accion=verificar">
+            <form acction="srvusuario?accion=verificar" POST>
                                
                 <div id="menu">
                     <ul>
@@ -25,7 +25,7 @@
                     <a href="ModificarAdmin.jsp" class="rainbow rainbow-1">Modificar Cuenta Administrador</a>
                     <a href="ConsultarUs.jsp" class="rainbow rainbow-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspConsultar Usuarios&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
                     <a href="prestamos.jsp" class="rainbow rainbow-3">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspConsultar Prestamos&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-                    <a href="videojuego.jsp" class="rainbow rainbow-4">Administración de Videojuegos</a>
+                    <a href="videojuego.jsp" class="rainbow rainbow-4" type="submit" name="verificar">Administración de Videojuegos</a>
                     
                <nav>
                    <div class="navicon">

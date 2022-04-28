@@ -20,7 +20,7 @@
         <div class="usuario">
             
             <h1>Administrar Videojuegos</h1>
-            <form>
+            <form acction="srvusuario?accion=verificar" POST>
                  <div id="main">
 
                     <a href="crearvid.jsp" class="rainbow rainbow-1">Crear Videojuego</a>
@@ -89,6 +89,16 @@
                     </div>
                     
                 </div>
+                    
+                <nav>
+                   <div class="navicon">
+                       <div></div>
+                           
+                   </div>
+                   <div class="boton">
+                       <a href="index.jsp">Cerrar Sección</a>
+                   </div>
+                </nav>
             </form>
         </div>
     </body>
