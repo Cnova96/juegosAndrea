@@ -33,6 +33,7 @@ body{
     text-align: center;
 }
 
+
 #menu { margin:40px 0 0 87px; }
 #menu ul { list-style:none; }
 #menu ul li { display:inline; float:left; margin-bottom:20px; }
@@ -285,16 +286,4 @@ nav:hover {
 .navicon div:before { top: -7px; }
 
 .navicon div:after { top: 7px; }
-
-a{
-  border: none;
-  outline: none;
-  height: 45px;
-  width: 200px;
-  background: #AEF9ED;
-  font-size: 15px;
-  border-radius: 23px;
-}
-
-
 
